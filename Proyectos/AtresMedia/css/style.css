@@ -1,0 +1,132 @@
+@font-face {
+    font-family: aubrey;
+    src: url(../font/aubrey.TTF);
+}
+
+.aubrey-font
+{
+    font-family: aubrey;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-size: 21px;
+    line-height: 1.5;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.container
+{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 10px solid black;
+    margin: 0.625rem;
+    width: 75vw;
+}
+.title
+{
+    padding: 0.9375rem;
+}
+.title_cabecera
+{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+.title_second
+{
+    height: 6rem;
+    width: 15rem;
+}
+
+#sofa
+{
+    border-left: 1px #000 outset;
+    border-radius: 50%;
+    height: 500px;
+}
+.content
+{
+    
+    padding-right: 0.9375rem;
+    
+}
+.parrafos
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+.alma
+{
+    font-family: cursive;
+    font-size: 1rem;
+}
+.color-letra
+{
+    background-color: rgb(83, 82, 82);
+    color: rgb(233, 238, 240);
+}
+
+.mas
+{
+    background-color: rgb(127, 231, 127);
+}
+.anuncios
+{
+    background-color: rgb(127, 202, 224);
+}
+.ena
+{
+    background-color: rgb(236, 102, 84);
+}
+.a3m
+{
+    background-color: rgb(235, 180, 117);
+}
+
+@media screen and (max-width: 1140px) {
+    .container
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    #sofa
+    {
+        height: 15.625rem;
+    }
+    .parrafos
+    {
+        margin-left: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    body
+    {
+        font-size: 18px;
+        line-height: 1.3;
+       
+    }
+    .title
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}    
