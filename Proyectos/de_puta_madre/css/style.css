@@ -1,0 +1,251 @@
+/*fuentes*/
+@font-face {
+    font-family:Valentine Cute ;
+    src: url(../font/Valentine\ Cute.ttf);
+}
+@font-face {
+    font-family:BillyBella ;
+    src: url(../font/BillyBella.otf);
+}
+
+@font-face {
+    font-family: hearts;
+    src: url(../font/hearts.ttf);
+}
+
+@font-face {
+    font-family: TodayIFeel;
+    src: url(../font/TodayIFeel.ttf);
+}
+
+@font-face {
+    font-family: figuras;
+    src: url(../font/ADELIA.otf);
+}
+.heart
+{
+    font-family: hearts;
+}
+.valentine-font
+{
+    font-family: Valentine Cute;
+}
+.billybella
+{
+    font-family: BillyBella;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.feel
+{
+    font-family: TodayIFeel;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.figure
+{
+    font-family: figuras;
+    font-style: 1.5rem;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-size: 21px;
+    line-height: 1.5;
+    width: 100vw;
+    /* border: 1px solid black; */
+    height: 100%;
+    display: flex;
+}
+
+.container
+{
+    border: 10px solid black;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    margin: 1rem;
+    display: flex;
+    
+}
+
+.title
+{
+    margin: 1.50rem;
+}
+
+.pies
+{
+    margin-top: 1em;
+   
+}
+h2
+{
+    font-size: 1em;
+    line-height: 1.4;
+    margin-top: 5em;
+}
+h3
+{
+    font-size: 0.9em;
+    line-height: 1.50;
+}
+
+img
+{
+    height: 20rem;
+}
+
+.content
+{
+    align-self: center;
+}
+
+#alma
+{
+    font-family:cursive;
+    font-size: 1rem;
+    
+}
+.parrafos
+{
+    margin: 1.5rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+}
+
+.imagen
+{
+    display: flex;
+}
+.p1, .p2, .p3 
+{
+    margin-top: 1em;
+}
+
+.pfinal
+{
+    grid-column: 2/3;
+}
+.pfinal_girl_sit
+{
+    display: none;
+    float: left;
+    shape-outside: circle(49.5%);
+    height: 25rem;
+    width: 13rem;
+  
+}
+
+
+
+@media screen  and (max-width: 1250px) {
+ 
+    .parrafos
+    {
+        grid-template-rows: 40% auto;
+        grid-template-columns: 20% auto;
+    }
+   .p1
+   {
+       grid-column: 1/3;
+   }
+   .pfinal
+   {
+       grid-column: 1/3;
+   }
+    .feel
+    {
+        display: none;
+    }
+    .banera
+    {
+        display: none;
+    }
+    .girl_sit
+    {
+        display: none;
+    }
+    .pfinal_girl_sit
+    {
+        display: flex;
+        width: auto;
+        height: 20rem;
+        margin-left: 2rem;
+        padding: 2rem;
+    }
+   
+}
+
+@media screen  and (max-width: 1020px) {
+    .girl_sit 
+    {
+        display: none;
+    } 
+    .parrafos
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen  and (max-width: 862px) {
+  
+  
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .title
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+    }
+    .content
+    {
+    margin-top: -1rem;
+    }
+    .pies
+    {
+        height: 10rem;
+        width: 10rem;
+
+    }
+    
+    h2
+    {
+        margin-top: 0;
+    }
+}
+
+@media screen  and (max-width: 618px) {
+    body
+    {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .title
+    {
+        text-align: center;
+    }
+    .pfinal_girl_sit
+    {
+        display: none;
+    }
+
+}    
+
