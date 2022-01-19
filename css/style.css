@@ -10,6 +10,7 @@ body
     justify-content: center;
     align-items: center;
     background: #16384c;
+    font-size: 21px;
 }
 .container
 {
@@ -83,4 +84,5 @@ body
 {
     text-decoration: none;
     list-style: none;
+    color: blue;
 }

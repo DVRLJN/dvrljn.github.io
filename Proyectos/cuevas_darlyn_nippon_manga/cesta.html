@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cesta.css">
+    <title>Compra</title>
+</head>
+<body>
+    
+    <div class="container">
+        <section>
+            <!-- CAJA IZQUIERDA -->
+            <div class="cajon-izq">
+                <h1>CESTA DE MANGAS </h1>
+                <div class="cajon">
+                    <h3>HANA TO AKUMA</h3>
+                         
+                    <img src="../img/portadas/Shingeki-no-Kyojinnnnnnnnnnnn.jpg" alt="img">
+                        <h4 class="price">7,5€</h4>
+                    <h3>HORIMIYA</h3>
+                    <img src="../img/portadas/fruist basketttttttt.jpg" alt="img">
+                        <h4 class="price">7,5€</h4>
+                    <h3>KYOU KO WO</h3>
+                    <img src="../img/portadas/hana_to_akuma_by_chibidarksusaku.jpg" alt="img">
+                    <h4 class="price">7,5€</h4>
+                </div>
+                <footer>TOTAL: 22,5€</footer>
+            </div>  
+
+            <!-- FORMULARIO -->
+            <div class="container-form">               
+                <form class="formulario" action="/post-compra.html">
+                    <h1 class="direct">DIRECIÓN DE ENVIO</h1>
+
+                    <label for="name"></label>
+                    <input type="text" id="name" name="nombre" placeholder="Nombre...">
+
+                    <label for="apellidos"></label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos...">
+
+                    <label for="email"></label>
+                    <input type="email" id="email" name="Email" placeholder="Email...">
+
+                    <label for="ciudad"></label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad...">
+
+                    <label for="calle"></label>
+                    <input type="text" id="calle" name="calle" placeholder="Calle...">
+
+                    <label for="telefono"></label>
+                    <input type="tel" id="phone" name="telefono" placeholder="Teléfono...">
+
+                    <label class="pay-metod" for="pay-metod">Método de pago
+                        <select name="pay-metod" id="pay-metod">
+                            <option value="TDC">Tarjeta de cédito</option>
+                            <option value="PP">PayPal</option>
+                        </select>
+                    </label>                   
+                </form> 
+            </div> 
+
+            
+            <!-- BOTON COMPRAR -->
+            <a href="post-compra.html">
+                <button class="buy-button" type="button">
+                   <p>C</p><br><p> O </p> <br> <p>M</p> <br><p> P</p> <br><p> R</p> <br><p>  A</p> <br><p> R</p>
+                </button>
+            </a>
+        </section>
+    </div>
+</body>
+</html>

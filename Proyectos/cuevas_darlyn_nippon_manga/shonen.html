@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shonen.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <title>Shonen</title>
+    <script>
+
+        $(document).ready(function(){
+                /*FADEIN UL*/
+               $("#list")
+               .hide()
+               .fadeIn(2000); 
+               
+               
+               
+             var botones=document.querySelectorAll("button")
+
+                
+                for(var i=0; i<botones.length; i++) {
+                
+                botones[i].addEventListener("click", carrito, false );
+                } 
+        });
+                
+                function carrito(e){
+                
+                    if(e.target==button1){
+                        
+                        $("#button1").replaceWith("<div id='button1'> Agregado al Carrito </div>");
+                    } 
+                    if(e.target==button2){
+                    
+                        $("#button2").replaceWith("<div id='button2'> Agregado al Carrito </div>");
+                    }    
+                    if(e.target==button3){
+                    
+                        $("#button3").replaceWith("<div id='button3'> Agregado al Carrito </div>");
+                    } 
+                    if(e.target==button4){
+                    
+                        $("#button4").replaceWith("<div id='button4'> Agregado al Carrito </div>");
+                    } 
+                }
+        
+
+    </script>
+</head>
+<body>
+    <div class="container gray">
+        <!-- HEADER -->
+        <header class="cabecera">
+            <div class="logo white"><img src="img/img/logo.png" alt="logo"></div>
+        </header>  
+        
+        <!--NAV BAR-->
+            <nav class="nav-bar dark"> 
+                 <!--BUSCAR-BUTTON -->
+                <div class="search-bar">
+                    <input 
+                        type="text" 
+                        class="search-bar__input" 
+                        placeholder="Buscar..." 
+                        aria-label="Search"
+                    />
+                    <button class="search-bar__submit" >
+                        <div class="search-pic"></div>
+                    </button>
+                </div>  
+                  <!--LINKS-->
+                <ul id="list">
+                    <li class="link"><a class="inicio" href="index.html">INICIO</a></li>
+                    <li class="rallita">|</li>
+                    <li class="link"><a class="categorias" href="Catego.html">CATEGORIAS</a></li>
+                    <li>|</li>
+                    <li>                       
+                        <a href="cesta.html">
+                            <div class="carrito"></div>
+                        </a>                                                   
+                    </li>
+                    <li class="status">SHONEN</li>
+                </ul>
+            </nav>
+
+
+<!-- CONTENIDO -->
+<div class="cuerpo gray">    
+    <div class="content white cuerpo--1 "> 
+    
+            <!-- CAJAS -->
+            <div class="cajones">                    
+                <div class="caja c1">
+
+                    <div class="image i1"></div> 
+                    <h3>JUJUTSU KAISEN <br>
+                        7,5€ </h3>
+                    <div class="botones"> 
+                        <button class="content-button" id="button1" type="button">AÑADIR MANGA</button>
+                    </div> 
+                </div>   
+                <div class="caja c2">
+
+                    <div class="image i2"></div>
+                    <h3>DRAGON BALL LEGENDS <br>
+                        7,5€ </h3>
+                    <div class="botones">
+                        <button class="content-button" id="button2" type="button">AÑADIR MANGA</button>
+                    </div> 
+                </div> 
+                <div class="caja c3">
+                    
+                    <div class="image i3"></div>
+                    <h3>ONE PIECE <br>
+                        7,5€ </h3>
+                    <div class="botones">
+                        <button class="content-button" id="button3" type="button">AÑADIR MANGA</button>
+                    </div>
+                </div>    
+                <div class="caja c4">
+
+                    <div class="image i4"></div>
+                    <h3>NARUTO<br>
+                        7,5€</h3>
+                    <div class="botones">
+                        <button class="content-button" id="button4" type="button">AÑADIR MANGA</button>
+                    </div>
+                </div> 
+            </div>                                   
+    </div>    
+</div>
+</div>
+</body>
+</html>

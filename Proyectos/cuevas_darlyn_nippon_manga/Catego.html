@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/catego.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <title>CATEGORIAS</title>
+    <script>
+
+        $(document).ready(function(){
+                /*FADEIN UL*/
+               $("#list")
+               .hide()
+               .fadeIn(2000);        
+        });
+
+    </script>
+</head>
+<body>
+    <div class="container gray">
+
+        
+                <!-- HEADER -->
+                <header class="cabecera">
+                    <div class="logo white"><img src="img/img/logo.png" alt="logo"></div>
+                </header>    
+                
+                
+                <!--NAV BAR-->
+                    <nav class="nav-bar dark"> 
+                         <!--BUSCAR-BUTTON -->
+                        <div class="search-bar">
+                            <input 
+                                type="text" 
+                                class="search-bar__input" 
+                                placeholder="Buscar..." 
+                                aria-label="Search"
+                            />
+                            <button class="search-bar__submit" >
+                                <div class="search-pic"></div>
+                            </button>
+                        </div>  
+                          <!--LINKS-->
+                        <ul id="list">
+                            <li class="link inicio"><a href="index.html">INICIO</a></li>
+                            <li class="barra1">|</li>
+                            <li class="link"><a href="index.html">NOVEDADES</a></li>
+                            <li>|</li>
+                            <li>                       
+                                <a href="cesta.html">
+                                    <div class="carrito"></div>
+                                </a>                                                   
+                            </li>
+                            <li class="status">CATEGORIAS</li>
+                        </ul>
+                    </nav>
+
+
+        <!-- CONTENIDO -->
+        <section class="white">
+            <!-- TITULO -->
+            <h1 class="titulo">CATEGORIAS</h1>
+            <!-- CAJAS -->
+            <div class="catego">
+                <!-- CHICO -->
+                <div class="caja shadow-boy ">
+                    <div class="img-btn">
+                        <div class="c1 center-image black-shdw"></div>
+                        <button class="btn1 but"><a href="shonen.html">ENTRAR</a></button>
+                    </div>
+                    <div class="comic-name">
+                        <h2>SHONEN</h2>   
+                    </div> 
+                </div>
+                <!-- CHICA -->
+                <div class="caja shadow-girl ">
+                    <div class="img-btn">
+                        <div class="c2 center-image black-shdw "></div>
+                        <button class="btn2 but"><a href="shojo.html">ENTRAR</a></button>
+                    </div>    
+                    <div class="comic-name">
+                        <h2>SHOJO</h2>
+                        
+                    </div>   
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+</body>
+</html>

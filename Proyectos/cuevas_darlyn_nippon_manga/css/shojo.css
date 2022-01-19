@@ -1,0 +1,330 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body { font-size: 1.50em }
+/***COLORES***/
+.orange{
+    color: #EB5E28;
+}
+.white{
+    background: #FFFCF2;
+}
+.gray{
+    background: #CCC5B9;
+}
+.dark{
+    background:#403D39;
+}
+
+
+/* CONTENEDOR */
+.container{
+    width: 100%;
+    height:100vh;   
+}
+
+
+/* HEADER */
+header{
+    height: 10%;
+}
+
+/* LOGO */
+.logo>img{
+    width: 27rem;
+}
+
+
+/* NAVBAR */
+nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+/*  SearchBar */
+.search-bar
+{   position: relative;
+    border: 0.1rem solid rgb(255, 94, 0) ;
+    display: flex;
+    border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+    position: relative;
+    width: 30%;
+    height: 35px;
+    
+    transition: width 1s ease-in-out;;
+}
+
+
+.search-bar__input{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    flex-grow: 1;
+    padding: 0 2rem;
+    border: 0;
+    background: transparent;
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 2em;
+    
+}
+.search-bar__input:focus{
+    outline: 0;
+}
+.search-bar__submit{
+    width: 2rem;
+    font-size: 0.5rem;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+    background:transparent;
+    color: wheat;
+}
+.search-pic{
+    width: 2rem;
+    height: 2rem;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/img/search/1x/baseline_search_black_24dp.png); 
+    border-radius: 0.1875rem 0.1875rem 0.1875rem 0.1875rem;   
+}
+
+
+
+/* NAV BAR */
+ul{
+    display: inline-flex; 
+    list-style: none;
+    float: right;
+    color: white;
+    text-align: center;
+    margin-right: 5rem;
+    line-height: 3rem;
+}
+li{
+    padding-right: 2rem;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+.link>a:hover{
+    color: #EB5E28;
+} 
+
+/* CARRITO */
+.carrito{   
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../img/img/shopping-cart.png);
+    background-position:center;
+    background-size: cover;
+    cursor: pointer;
+}
+.carrito>a{
+    width: 2.5rem;
+    height: 2.5rem;   
+}
+.carrito:hover
+{
+    transform: scale(1.2);
+}
+.status{
+   color: brown;
+   text-shadow:2px 2px 5px burlywood;
+}
+
+
+
+/* CUERPO */
+.cuerpo{
+    position: relative;
+    width: 100%;
+    height: 75%;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start; 
+    background: #CCC5B9;   
+    
+}
+.cajones{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-radius: 0rem 0rem 0.3125rem 0.3125rem;
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem #403D39 ;
+    background: #FFFCF2;
+    background-image: url(../img/bg/Little-Red-Riding-Hood-anime-girl_2880x1800.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+h1{
+    height: 2rem;
+    background: #4192c7;
+    border-radius: 0rem 0.1875rem 0.1875rem 0.1875rem;
+    box-shadow: 0.125rem 0.125rem 0.5rem#0c0b0b;
+    color: whitesmoke;
+}
+.caja{   
+    margin-bottom: 1rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem; 
+    transform: scale(1.6);        
+}
+.image{
+    box-shadow: 0.1875rem 0rem 0.3125rem; 
+    transition: transform 1s;
+}
+.image:hover{   
+    transform:rotate(2deg);
+}
+h3{   
+    font-size: 0.5rem;
+    border-style:ridge;
+    padding: 0.3rem;
+    color: whitesmoke;
+    background: #403D39;
+}
+
+
+
+/* BOTON */
+.content-button{
+    background: rgb(255, 94, 0);
+    color: wheat;
+    padding: 0.1875rem;  
+    border: none;
+    box-shadow: 0 2px #999;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+}
+.content-button:hover{   
+    background: rgb(197, 73, 1)
+}
+.content-button:active{
+    background: rgb(197, 73, 1);
+    box-shadow: 0 0.0625rem #999;
+    transform: translateY(0.1875rem);
+}
+#button1, #button2, #button3, #button4{
+    width: 112px;
+    font-size:small;
+    text-align: center;
+    background: rgb(236, 45, 20);
+    color: wheat;
+    padding: 0.1875rem;  
+    border: none; 
+    cursor: pointer;  
+    margin-bottom: 0.1rem;
+    border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+}
+
+
+/* Imagenes */
+.image{
+    width: 7rem;
+    height: 12rem;
+    background-size: cover;
+    background-position: center;
+}
+.i1{background-image: url(../img/portadas/fruist\ basketttttttt.jpg)}
+.i2{background-image: url(../img/portadas/hana_to_akuma_by_chibidarksusaku.jpg)}
+.i3{background-image: url(../img/portadas/horimiyaaaa.jpg)}
+.i4{background-image: url(../img/portadas/Kyou.Koi.wo.kissss.jpg)}
+
+
+
+/* MEDIA QUERY 800px */
+@media screen and (max-width: 800px) {
+  
+    /* HEADER */
+    header{
+        background:rgb(255, 251, 241);
+    }
+    /* LOGO */
+    .logo>img{
+        
+        width: 26.5rem;       
+    }
+
+    /*INICIO/NOVEDADES */
+    ul{
+        font-size: 1.2rem; 
+        margin-left: 11rem;
+        align-items: center;
+    
+    }
+    li{
+        padding: 0.7rem;
+    }
+    .status{
+        margin-left: 2rem;
+        margin-right: 9rem;
+    }
+    .inicio{display: none;}
+    .rallita{
+        display: none;
+    }
+   
+    .barra1{display:none}
+    .search-bar{display: none;}
+    footer>p{display:none;}
+    .novedad{display:none}
+    .media-icons{display: none;
+     
+     }
+   
+
+    .cajones {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: hidden;  
+        
+    } 
+
+    .caja {
+        height: 100%;
+        display: flex;   
+        margin-top: 29rem;
+        margin-bottom: 11rem;
+        align-items: center;
+        justify-content: center;
+        transform: scale(3);
+        gap: 0.5rem;       
+        }
+        /* BOT)ON */
+        .content-button{
+            width: 8rem;
+            margin-bottom:10rem;
+
+        }
+
+}    
+
+
+ /* MEDIA QUERY 1122px */
+ @media screen and (max-width: 1122px) {
+
+    /* BUSCAR */
+    .search-bar{
+        display:none
+    }
+} 

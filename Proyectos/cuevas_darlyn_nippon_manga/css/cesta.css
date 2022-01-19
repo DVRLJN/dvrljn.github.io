@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body { font-size: 1.50em }
+
+
+
+/***COLORES***/
+.orange{
+    color: #EB5E28;
+}
+.white{
+    background: #FFFCF2;
+}
+.gray{
+    background: #CCC5B9;
+}
+.dark{
+    background:#403D39;
+}
+
+
+
+/* CONTENEDOR */
+.container{
+    width: 100%;
+    height: 100vh;
+    background:#CCC5B9 ;
+    border: 0.0625rem solid black;  
+}
+
+
+/* CUERPO */
+section{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin-top: 1.25rem;
+    margin-left: 3.125rem;
+    border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+    background:#FFFCF2 ;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/bg/unnamed.jpg);
+    background-size: cover;  
+}
+
+
+/* CAJON IZQUIERDA */
+.cajon-izq{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 30%;
+    height: 100%;
+    text-align: center;   
+}
+h1{
+    font-size: 1.5rem;
+    background: rgb(43, 138, 202);
+    color: whitesmoke;
+    box-shadow: 0.0625rem 0.0625rem 0.1875rem #0f0f0f;
+    text-align: center;  
+}
+.price{
+    width: 50%;
+    margin-left: 4.5rem;
+    background: rgb(20, 28, 32);
+    color: whitesmoke;
+    box-shadow: 0.0625rem 0.0625rem 0.1875rem #0f0f0f;
+  
+}
+.cajon{
+    width: 100%;
+    height: 100%;                
+    overflow: scroll;     
+}
+img{
+    width: 15rem;
+    box-shadow: 0.1875rem 0rem 0.3125rem; 
+    height: 20rem;
+}
+h3{
+    width: 80%;
+    background: #D7D4ED;
+    padding: 0.2rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    box-shadow: 0.1875rem 0rem 0.3125rem black;    
+}
+footer{
+    font-size: 2rem;
+    background: rgb(20, 28, 32);
+    color: whitesmoke;
+    box-shadow: 0.0625rem 0.0625rem 0.1875rem #0f0f0f;
+}
+
+
+
+/* FORMULARIO */
+.container-form{
+    width: 50%;   
+}
+form{
+    text-align: start;    
+    margin-left: 15rem;
+    margin-top: 4.9rem; 
+    transform: scale(1.2);
+}
+#email,
+#name,
+#apellidos,
+#calle,
+#ciudad,
+#phone{
+    width: 100%;
+    padding: 0.7rem;  
+}
+.direct{
+    margin-bottom: 2rem;
+}
+input{
+    margin-bottom: 1rem;
+    box-shadow: 0.0625rem 0.0625rem 0.3125rem rgb(43, 138, 202);
+}
+
+
+/* CREDIT TARGET */
+.pay-metod{   
+    box-shadow: 0.125rem 0.125rem 0.3125rem ;
+    background:rgb(28, 38, 44) ;
+    color: whitesmoke;
+    text-align: center;
+    font-size:1.5rem;
+    padding: 0.5rem ;
+}
+#pay-metod{
+    height: 1.5rem;
+    width: 10rem;
+    
+}
+
+/* BOTON */
+a{
+    background: rgb(255, 94, 0);
+    color: wheat;
+    padding: 3rem;  
+    border: none;
+    box-shadow: 0.25rem 0.3125rem #999;
+    border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+    margin-left: 11.875rem; 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+a:hover{   
+    background: rgb(197, 73, 1)
+}
+a:active{
+    background: rgb(197, 73, 1);
+    box-shadow: 0 1px #999;
+    transform: translateY(3px);
+}
+.buy-button{
+    background: transparent;
+    color: whitesmoke;
+    font-size: 3rem;
+    border: none;
+}
+button>p{
+    line-height: 2rem;
+}
+
+
+/* MEDIA QUERY 800PX */
+@media screen and (max-width: 800px) {
+
+
+    section{
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }    
+   
+    /* CAJON IZQUIERDA */
+    .cajon-izq{  
+    margin-top: 0; 
+    padding: 2rem;
+    width: 70%;
+    height: 100%;  
+    flex-direction:column; 
+    }
+
+ 
+    form{
+        width: 150%;
+        height: 20%;
+        text-align: start;    
+        margin-left:-4rem;
+        margin-top: 2.8rem; 
+        transform: scale(1.2);
+    }
+
+    a{
+      align-self:flex-start;
+      transform: rotate(90deg);
+      height: 100%;
+     
+    }
+    button{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+       
+    
+
+    }
+    button>p{
+        transform: rotate(270deg);
+        line-height: 2.5rem;    
+    }
+    
+}
