@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding:0px;
+  }
+  
+  .header{
+    display:flex;
+    justify-content:center;
+  }
+  
+  .caja {
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+    background: #8f5d35;
+    border-radius: 70px;
+    position: relative;
+    box-shadow: 10px 10px 20px green;
+    perspective:700px;
+    transition: transform 20s, box-shadow 15s;
+  }
+  
+  
+  .pelo {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: #050505;
+  }
+  .cerquillo1 {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background: linear-gradient(
+      0deg,
+      rgba(143, 93, 53, 1) 42%,
+      rgba(0, 0, 0, 1) 77%
+    );
+    margin: 50px 0px 0 0px;
+  }
+  .cerquillo2 {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background: linear-gradient(
+      0deg,
+      rgba(143, 93, 53, 1) 42%,
+      rgba(0, 0, 0, 1) 77%
+    );
+    margin: 50px 0px 0 180px;
+  }
+  
+  .ceja1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    align-items: center;
+    margin: 65px 0px 0px 30px;
+    border-radius: 40% 0% 50% 40%;
+    border-top: 10px solid;
+  }
+  
+  .ceja2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    align-items: center;
+    margin: 65px 0px 0px 120px;
+    border-radius: 00% 40% 0% 40%;
+    border-top: 10px solid;
+  }
+  .ojos {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #050505;
+    margin: 83px 0px 0px 40px;
+    border-radius: 100%;
+    box-shadow: 80px 0px;
+    transition: height 2s, margin 1s;
+  }
+  /*Movimiento en los ojos*/
+  .ojos:hover {
+    height: 25px;
+    margin: 87px 0px 0px 40px;
+  }
+  .brillo {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-radius: 100%;
+    margin: 10px;
+    box-shadow: 80px 0px white;
+  }
+  
+  .nariz {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-right: 1.5px solid black;
+    border-radius: 0px 0px 10px 0px;
+    margin: 115px 0px 0px 85px;
+  }
+  .bigote {
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    background: transparent;
+    margin: 135px 0px 0px 75px;
+    border-radius: 60%;
+    border-top: 3px dashed black;
+  }
+  .boca {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background: black;
+    margin: 145px 0px 0px 75px;
+    border-radius: 0px 0px 50px 50px;
+    border: 1px solid black; 
+  }
+  
+  .dientes {
+    width: 50px;
+    height: 5px;
+    background: white;
+  }
+  .rizo1 {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background: black;
+    margin-top: -10px;
+    margin-left: -2px;
+    rotate: -5deg;
+    border-radius: 40%;
+    box-shadow: 16px -5px black, 29px 1px black, 42px -2px black, 55px 5px black,
+      68px 2px black, 60px 1px black, 73px 6px black, 86px 3px black,
+      99px 2px black, 112px 4px black, 125px 5px black, 138px 8px black,
+      151px 5px black, 164px 9px black, 177px 9px black, 183px 15px black;
+  }

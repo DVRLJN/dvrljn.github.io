@@ -11,6 +11,7 @@ body
     align-items: center;
     background: #16384c;
     font-size: 21px;
+    line-height: 1.5;
 }
 .container
 {
@@ -20,9 +21,10 @@ body
     justify-content: center;
     align-items: center;
     padding: 90px;
+    
 }
 
-.container .carta
+.carta
 {
     position: relative;
     height: 120px;
@@ -36,31 +38,38 @@ body
     box-shadow: 3px 3px 5px rgba(8, 8, 8, 0.5);
     transition: 0.3s ease-in-out;
     
+    
 
 }
-.container .carta:hover
+
+.carta_firts:hover
 {
-    height:350px ;
+   height:350px ; 
+}  
+.carta_second:hover
+{
+    cursor: pointer;
+    
 }
 
-.container .carta .imgBx 
+
+.carta .imgBx 
 {
     position: relative;
     width: 350px;
     height: 300px;
     top: -120px;
     z-index: 1;
-    
 }
 
 
-.container .carta .imgBx img
+.carta .imgBx img
 {
     max-width: 100%;
     border-radius: 4px;
     max-height: 100%;
 }
-.container .carta .content
+.carta .content
 {
     position: relative;
     margin-top: -200px;
@@ -69,7 +78,7 @@ body
     transition: 0.3s ease-in-out;
     opacity: 0;
 }
-.container .carta:hover .content
+.carta_firts:hover .content
 {
     visibility: visible;
     opacity: 1;
@@ -84,5 +93,6 @@ body
 {
     text-decoration: none;
     list-style: none;
-    color: blue;
+    color: rebeccapurple;
 }
+
