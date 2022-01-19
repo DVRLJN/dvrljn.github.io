@@ -1,0 +1,41 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav_ul
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+    background: #16384c;
+    
+    color: white;
+}
+.nav_ul_list
+{
+    text-decoration: none;
+    color: white;
+}
+
+#li_proyect
+{
+    text-decoration: none;
+    color: white;
+}
+.ul__proyects
+{
+    height: 0;
+    display: none;
+}
+#li_proyect:hover
+{
+    cursor: pointer;
+    color: burlywood;
+}
