@@ -73,3 +73,14 @@ body
     visibility: visible;
     opacity: 1;
 }
+
+.proyect_title
+{
+    margin: 1rem;
+}
+
+.proyect_link
+{
+    text-decoration: none;
+    list-style: none;
+}
