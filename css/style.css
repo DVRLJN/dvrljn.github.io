@@ -96,3 +96,7 @@ body
     color: rebeccapurple;
 }
 
+#curriculum
+{
+    object-fit: cover;
+} 
