@@ -44,7 +44,8 @@ body
 }
 
 .container
-{
+{   
+    
     display: flex;
     flex-direction: row;
     border: 10px solid black;
@@ -53,38 +54,43 @@ body
     height: 100vh;
     justify-content: space-evenly;
     align-items:center;
-    padding: 0.5rem;
+    padding: 0.5rem; 
 }
 
 .title
 {  
     
     width: 30%;
-    height: min-content;
-    margin: 0;   
+    height: 100%;
+    margin: 2rem;   
     box-shadow: 3px 3px 10px gray;
     text-align: center;
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    
 }
 .title_firts
 {
-    margin-top: 1.5rem;
+    margin-top: -0.5rem;
+    
 }
 .alma
 {
     font-family:cursive;
+    margin-top: -1rem;
+    padding: 0.5rem;
 }
 .subtitle
 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+   
+    font-size: 1rem;
 }
 
 .title_img
 {   
     max-width: 25rem;
+    
 }
 
 
@@ -98,3 +104,101 @@ body
     overflow-y: scroll;
 }
 
+@media screen and (max-width:1048px) {
+    
+   .title
+   {
+       height: min-content;
+   }
+}
+
+@media screen and (max-width:916px) {
+
+
+    .container
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30% 70%;
+        flex-wrap: wrap;
+    }
+    
+    .title
+    {
+       grid-column: 1/2;
+       grid-row: 1/2;
+       flex-direction: row;  
+       width: 25rem;
+       height: 10rem;
+       margin-top:  0;
+
+    }
+    .parrafo_firts
+    {
+        grid-row: 2/3;
+        width: fit-content;
+    }
+    .parrafo_second
+    {
+        grid-row: 1/3;
+        width: fit-content;
+    }
+    
+    .alma
+    {
+        
+        align-self: flex-end;
+    }
+    .title_firts
+    {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+ 
+    }
+    .subtitle
+    {
+        align-self: flex-end;
+        font-size: 0.5rem;
+        margin: 0.5rem;
+    }
+ 
+ }
+
+ @media screen and (max-width:832px) {
+
+    .title
+    {
+       
+        grid-column: 1/3;
+        width: 90%;
+    }
+
+    .parrafo_second
+    {
+        grid-row: 2/3;
+    }
+    .title_firts
+    {
+    margin-top: 2rem; 
+    }
+ }
+
+ @media screen and (max-width:586px) {
+
+    .container
+    {
+        height: 100%;
+        display: flex;
+
+    }
+
+    .title
+    {
+        order: -1;
+    }
+    .parrafo_second
+    {
+        margin-top: 0;
+    }
+
+}    
