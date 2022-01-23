@@ -261,7 +261,6 @@ img
     {
         height: 10rem;
         width: 10rem;
-
     }
     
     h2
@@ -271,11 +270,14 @@ img
 }
 
 @media screen  and (max-width: 618px) {
+    
     body
     {
         font-size: 18px;
         line-height: 1.3;
     }
+   
+
     .title
     {
         text-align: center;
