@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reproductor.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <title>reproductor</title>
+</head>
+<body>
+    
+    <div class="container__music__player">
+        <div class="player">
+            <!-- Controles -->
+            <div class="player__controls">
+                <!-- Flecha inicial arriba -->
+                <div class="player__btn player__btn--small">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <!-- Reproduciendo ahora -->
+                <h5 class="player__title">playing now</h5>
+                <div class="player__btn player__btn--small">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <!-- Portada Album -->
+            <div class="player__album">
+                <img src="img/portada.jpeg" alt="Album__cover" class="player__img">
+            </div>
+
+            <!-- Nombre Artista -->
+            <h2 class="player__artist">Bruno Mars</h2>
+            <h3 class="player__song"></h3>
+
+            <input type="range" value="20" min=0 class="player__level"/>
+
+            <!-- Duracion audio -->
+            <div class="audio-duration">
+                <div class="start">00:01</div>
+                <div class="end">04:14</div>
+            </div>
+
+            <!-- Audio -->
+            <audio  class="player__audio" controls id ="audio">
+                <source src="audio/Bruno Mars Young Girls Official Audio.mp3" type="audio/mpeg">
+            </audio>
+
+            <!-- Botones -->
+            <div class="player__controls">
+                <!-- Retroceso -->
+                <div class="player__btn player__btn--medium">
+                    <i class="fas fa-backward"></i>
+                </div>
+
+                <!-- Reproducir y pausar -->
+                <div class="player__btn player__btn--medium red" id="play">
+                    <i class="fas fa-play play-btn"></i>
+                    <i class="fas fa-pause pause-btn hide"></i>
+                </div>
+                
+                <!-- Siguiente -->
+                <div class="player__btn player__btn--medium">
+                    <i class="fas fa-forward"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
