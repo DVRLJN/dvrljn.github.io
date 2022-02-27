@@ -166,8 +166,12 @@ a
 {
     padding: 1rem;
     background: var(--bg-color);
-    box-shadow: 9px 9px 16px rgba(114, 112, 90, 0.6),
-    -5px -4px 16px rgba(255, 255, 255, 0.699);
+    box-shadow: 6px 6px 12px rgba(124, 122, 99, 0.6),
+    3px 3px 7px rgba(133, 131, 114, 0.5),
+    1px 1px 5px rgba(146, 145, 135, 0.3),
+    -3px -3px 7px rgba(230, 229, 220, 0.6),
+    -1px -1px 5px rgba(236, 236, 231, 0.3),
+    -6px -6px 12px rgba(255,255,255,0.5);
     
 }
 
