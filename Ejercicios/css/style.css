@@ -48,9 +48,11 @@ a
 }
 a:hover
 {
-    color: white;
-    
+    color: black;
+    background-color: white;
+    border-radius: 20px;
 }
+
 ul
 {
     width: 10rem;
