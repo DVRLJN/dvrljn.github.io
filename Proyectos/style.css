@@ -17,9 +17,12 @@ body
     height: 100vh;
 }
 header
-{
-    height: 2.5rem;   
+{  
     width: 100%; 
+}
+.nav__bar
+{
+    width: 100%;
 }
 
 .navegador
@@ -28,9 +31,12 @@ header
     width: 100%;
     height: 100%;
     list-style: none;
-    justify-content: space-around;
-    margin-top: 1rem;
+    justify-content: space-around;  
     text-align: center; 
+    flex-wrap: wrap;
+    position: relative;
+    padding: 1rem;
+    
 }
 
 a
@@ -38,30 +44,122 @@ a
     cursor: pointer;
     text-decoration: none;
     color: #595c61;
+    position: relative; 
 }
 a:hover
 {
-    color: red;
+    color: white;
+    
+}
+ul
+{
+    width: 10rem;
+    position: relative;
+    
+}
+ul::before
+{
+    content: "";
+    position:absolute;
+    top: 0; bottom: 0; left:0; right: 0;
+    transform: scaleY(0);
+    background-color: black;
+    transition: transform 300ms ease;
+}
+
+ul:hover::before
+{
+    transform-origin: top bottom;
+    transform: scaleY(1);
+    z-index: -1;
 }
 .container
 {
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-color: #e0e5ec;
     display: flex;
     position: relative;
+    align-items: center;
+    
+    
+}
+.proyectos
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction:column;
+}
+
+.image
+{
+    margin: 1rem;
+    width: 100%;
+    height: 40%;
+    box-shadow: 8px 8px 16px rgba(163,177,198,1),
+    5px 5px 12px rgba(163,177,198,.5),
+   -8px -8px 12px #ffffff,
+    -5px -5px 12px rgb(214, 220, 230);
+    object-fit: cover;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
     
 }
 
-.head
+.titulos
 {
-    height: 100%;
-    width: 100%;
+    height: 95%;
+    width: 70%;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    position: absolute;
+    justify-content: space-around;
+    margin: 2rem;
+    list-style: none;
+}
+
+.title__link
+{
+    margin: 1.5rem;
+}
+.title__link:hover
+{
+    color: black;
+}
+img
+{
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: .5rem;
+}
+.descripcion
+{
+    display: flex;
+    height: 85%;
+    width: 80%;
+    align-items: center;
     justify-content: center;
-    margin-top: -1rem;
-    
+    background-color: #e0e5ec;
+    border-radius: 5px;
+    margin: 1rem;
+    box-shadow: 8px 8px 16px rgba(163,177,198,1),
+     5px 5px 12px rgba(163,177,198,.5),
+    -8px -8px 12px #ffffff,
+    -5px -5px 12px rgb(214, 220, 230);
+   border-radius: 5px;
+}
+p
+{
+    font-family: monea;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 2;
+    color: black;
 }

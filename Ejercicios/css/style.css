@@ -1,0 +1,85 @@
+@font-face {
+    font-family: monea;
+    src: url(../font/Monea.otf);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    height: 100vh;
+}
+header
+{  
+    width: 100%; 
+}
+.nav__bar
+{
+    width: 100%;
+}
+
+.navegador
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    justify-content: space-around;  
+    text-align: center; 
+    flex-wrap: wrap;
+    position: relative;
+    padding: 1rem;
+    
+}
+
+a
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: #595c61;
+    position: relative; 
+}
+a:hover
+{
+    color: white;
+    
+}
+ul
+{
+    width: 10rem;
+    position: relative;
+    
+}
+ul::before
+{
+    content: "";
+    position:absolute;
+    top: 0; bottom: 0; left:0; right: 0;
+    transform: scaleY(0);
+    background-color: black;
+    transition: transform 300ms ease;
+}
+
+ul:hover::before
+{
+    transform-origin: top bottom;
+    transform: scaleY(1);
+    z-index: -1;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    background-color: #e0e5ec;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    
+}
