@@ -48,7 +48,7 @@
 
 
 /* Reproductor general */
-.player
+.front
 {
     width: 18.75rem;
     height: 34.375rem;
@@ -64,8 +64,6 @@
     -6px -6px 16px rgba(230, 229, 220, 0.6),
     -3px -3px 10px rgba(236, 236, 231, 0.3),
     -9px -9px 16px rgba(255,255,255,0.5);
-    
-    
 }
 
 /* Botones en conjunto */
@@ -91,7 +89,6 @@
     color: #5a3b15;
     transition: transform 500ms ease;
     position: relative;
-    
 }
 .player__btn::after
 {
@@ -102,18 +99,26 @@
     border-radius: 50%;
     box-shadow: 3px 3px 10px rgba(124, 122, 99, 0.6),
     -5px -4px 10px rgba(255,255,255,0.5);
-    
 }
 .player__btn:active.player__btn::after
 {
    transform: rotateZ(540deg);
-   
 }
 
 .player__btn:active
 {
-    box-shadow: 1px 1px 3px rgba(124, 122, 99, 0.6),
-    -1px -1px 3px rgba(255,255,255,0.5);
+    box-shadow: 1px 1px 3px rgba(82, 81, 74, 0.6),
+    -2px -2px 3px rgba(53, 52, 52, 0.5);
+    /* transform: rotateZ(540deg); */
+}
+
+.icono
+{
+    transition: transform 500ms ease;
+}
+
+.player__btn:active .icono
+{
     transform: rotateZ(540deg);
 }
 
@@ -146,7 +151,6 @@
     height: 100%;
     box-shadow: 5px 3px 20px #5a3b15,
     -9px -9px 16px rgba(255,255,255,0.5);
-
 }
 
 
@@ -187,7 +191,6 @@
     font-weight: 600;
     color: #a1a1a1;
     letter-spacing: 1px;
-
 }
 
 /* Con esto ponemos cada uno en un extremo */
@@ -213,3 +216,39 @@
     color: #fff;
 }
 
+
+
+
+/* CREAR NUEVA CLASE OCULTA, Y EN JAVASCRIPT CUANDO DES CLIK A LAS BARRAS,CAMBIAR EL N0MBRE DE LA CLASE PARA QUE QUE DESAPAREZCA EL PLAYER Y APAREZCA LA NUEVA TARJETA 
+CON LA LISTA DE CANCIONES */
+
+
+
+/* 
+* Para la imagen aspect-ratio
+ */
+
+
+ .hidden
+ {
+    animation: rotar 1s;
+    animation-fill-mode: forwards;
+ }
+ .player__list__ul
+ {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     list-style: none;
+ }
+
+ .song 
+ {
+    box-shadow: 6px 6px 16px rgba(124, 122, 99, 0.6),
+    3px 3px 16px rgba(133, 131, 114, 0.5),
+    -6px -6px 16px rgba(230, 229, 220, 0.6),
+    -3px -3px 10px rgba(236, 236, 231, 0.3);
+    border-radius: 5px;
+    padding: 0.2rem;
+    color: var(--backgound);
+}

@@ -10,7 +10,8 @@
     
     
     
-    <script src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/nnattawat/flip@master/dist/jquery.flip.min.js"> </script>
 
     <title>BrunoMars</title>
     <link rel="stylesheet" href="font-awesome/css/all.min.css">
@@ -94,68 +95,86 @@
                 <div class="circulo">
                     <div class="line"></div>
                 </div>
+                <div class="reproductor__player" id="card">
+                <!-- player -->
+                    <div class="front" id="player">
 
-                <div class="player" id="playerbg">
-                    <!-- Controles -->
-                    <div class="player__controls">
-                        <!-- Flecha inicial arriba -->
-                        <div class="player__btn player__btn--small" id="reiniciar">
-                            <i class="fas fa-arrow-left"></i>
+                
+
+                        <!-- Controles -->
+                        <div class="player__controls">
+                            <!-- Flecha inicial arriba -->
+                            <div class="player__btn player__btn--small" id="reiniciar">
+                                <i class="fas fa-arrow-left icono"></i>
+                            </div>
+                            <!-- Reproduciendo ahora icono barras -->
+                            <h5 class="player__title">playing now</h5>
+                            <div class="player__btn player__btn--small" id="barras">
+                                <i class="fas fa-bars icono" ></i>
+                            </div>
                         </div>
-                        <!-- Reproduciendo ahora icono barras -->
-                        <h5 class="player__title">playing now</h5>
-                        <div class="player__btn player__btn--small">
-                            <i class="fas fa-bars" id="barras"></i>
+                        <!-- Portada Album -->
+                        <div class="player__album">
+                            <img src="img/portada.jpeg" alt="Album__cover" class="player__img">
                         </div>
-                    </div>
-                    <!-- Portada Album -->
-                    <div class="player__album">
-                        <img src="img/portada.jpeg" alt="Album__cover" class="player__img">
-                    </div>
-        
-                    <!-- Nombre Artista -->
-                    <h2 class="player__artist" id="title__song">Young Girls</h2>
-                    <h3 class="player__song"></h3>
-        
-                    <input type="range" value="20" min=0 class="player__level"/>
-        
-                    <!-- Duracion audio -->
-                    <div class="audio-duration">
-                        <div class="start">00:01</div>
-                        <div class="end">04:14</div>
-                       
-                    </div>
-        
-                    <!-- Audio -->
-                    <audio  class="player__audio" controls  id ="audio">
-                        <source src="audio/Bruno_Mars_Young_Girls.mp3" type="audio/mpeg">
-                        <source src="audio/Bruno_Mars_Locked_Out_Of_Heaven.mp3">
+            
+                        <!-- Nombre Cancion -->
+                        <h2 class="player__artist" id="title__song">Young Girls</h2>
+                        <h3 class="player__song"></h3>
+
+                        <input type="range" value="20" min=0 class="player__level"/>
+            
+                        <!-- Duracion audio -->
+                        <div class="audio-duration">
+                            <div class="start" id="inicio">00:00</div>
+                            <div class="end" id="final">00:00</div>
                         
-                    </audio>
-        
-                    <!-- Botones -->
-                    <div class="player__controls">
-                        <!-- Retroceso -->
-                        <div class="player__btn player__btn--medium" id="back">
-                            <i class="fas fa-backward"></i>
                         </div>
-                        <!-- Reproducir y pausar -->
-                        <div class="player__btn player__btn--medium red" id="play">
+            
+                        <!-- Audio -->
+                        <audio  class="player__audio" controls  id ="audio" src="audio/Bruno_Mars_Young_Girls.mp3" type="audio/mpeg">
+                            <!-- <source id="Young"  src="audio/Bruno_Mars_Young_Girls.mp3" type="audio/mpeg">
+                            <source id="Locked" src="audio/Bruno_Mars_Locked_Out_Of_Heaven.mp3" type="audio/mpeg"> -->
+                        </audio>
+            
+                        <!-- Botones -->
+                        <div class="player__controls">
+                            <!-- Retroceso -->
+                            <div class="player__btn player__btn--medium" id="back">
+                                <i class="fas fa-backward icono"></i>
+                            </div>
+                            <!-- Reproducir y pausar -->
+                            <div class="player__btn player__btn--medium red" id="play">
+                                
+                                    <i class="fas fa-play play-btn icono" id="estado"></i>
+                                
+                                <div class="hide pause-btn"> 
+                                    <i class="fas fa-pause pause-btn icon__pause icono"></i>
+                                </div>
+                            </div>
                             
-                                <i class="fas fa-play play-btn" id="estado"></i>
-                            
-                             <div class="hide pause-btn"> 
-                                <i class="fas fa-pause pause-btn icon__pause"></i>
+                            <!-- Siguiente -->
+                            <div class="player__btn player__btn--medium" id="next">
+                                <i class="fas fa-forward icono"></i>
                             </div>
                         </div>
                         
-                        <!-- Siguiente -->
-                        <div class="player__btn player__btn--medium">
-                            <i class="fas fa-forward"></i>
-                        </div>
                     </div>
-                    
-                </div>
+                    <div class="back "style="display: none; id="lista">
+                        <!-- playlis -->
+                        <ul class="player__list__ul" > Songs
+                            <li class="song">1.Young Girls</li>
+                            <li class="song">2.Locked Out Heaven</li>
+                            <li class="song">3.Gorilla</li>
+                            <li class="song">4.Treasure</li>
+                            <li class="song">5.When I Was Your Man</li>
+                            <li class="song">6.Natalie</li>
+                            <li class="song">7.Show Me</li>
+                            <li class="song">8.Money Make Her Smile</li>
+                            <li class="song">9.If I Knew</li>
+                        </ul>
+                    </div>
+                </div>    
             </div>
            
         </div>
@@ -168,6 +187,7 @@
             <div class="caja"></div>
         </footer>
        
+
     </div>
     <script src="js/script.js"></script>
 </body>
