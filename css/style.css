@@ -35,15 +35,15 @@ header
     text-align: center; 
     flex-wrap: wrap;
     position: relative;
-    padding: 1rem;
-    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 a
 {
     cursor: pointer;
     text-decoration: none;
-    color: #595c61;
+    color: #e0e5ec;
     position: relative; 
 }
 a:hover
@@ -52,32 +52,20 @@ a:hover
     background-color: white;
     border-radius: 20px;
 }
+
 ul
 {
     width: 10rem;
     position: relative;
-    
-}
-ul::before
-{
-    content: "";
-    position:absolute;
-    top: 0; bottom: 0; left:0; right: 0;
-    transform: scaleY(0);
     background-color: black;
-    transition: transform 300ms ease;
 }
 
-ul:hover::before
-{
-    transform-origin: top bottom;
-    transform: scaleY(1);
-    z-index: -1;
-}
+
+
 .container
 {
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-color: #e0e5ec;
     display: flex;
     position: relative;
@@ -131,10 +119,6 @@ h1
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    box-shadow:inset 8px 8px 16px rgba(163,177,198,1),
-     inset 5px 5px 12px rgba(163,177,198,.5),
-    inset -8px -8px 12px #ffffff,
-     inset -5px -5px 12px rgb(214, 220, 230);
     border-radius: 5px;
 }
 
@@ -151,10 +135,6 @@ img
 {
     height: 90%;
     width: 90%;
-    box-shadow: 8px 8px 16px rgba(163,177,198,1),
-    5px 5px 12px rgba(163,177,198,.5),
-    -8px -8px 12px #ffffff,
-    -5px -5px 12px rgb(214, 220, 230);
     object-fit: cover;
     border-radius: 5px;
     transition: transform 500ms ease;
@@ -169,4 +149,44 @@ img:hover
 #work
 {
     margin-top: 1rem;
+}
+.content
+{
+    width: 100%;
+    display: flex ;
+    flex-direction: column;
+    text-align: center;
+    gap:2rem;
+}
+
+
+.image__face
+{
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.title__medio
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.parrafo
+{
+    width: 50%;
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center; 
+}
+
+.mascara
+{
+    margin-top: 1rem;
+    width: 35%;
 }

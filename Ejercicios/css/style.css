@@ -35,7 +35,8 @@ header
     text-align: center; 
     flex-wrap: wrap;
     position: relative;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
     
 }
 
@@ -43,7 +44,7 @@ a
 {
     cursor: pointer;
     text-decoration: none;
-    color: #595c61;
+    color: #e0e5ec;
     position: relative; 
 }
 a:hover
@@ -55,26 +56,11 @@ a:hover
 
 ul
 {
-    width: 10rem;
+    width: 100%;
     position: relative;
-    
-}
-ul::before
-{
-    content: "";
-    position:absolute;
-    top: 0; bottom: 0; left:0; right: 0;
-    transform: scaleY(0);
     background-color: black;
-    transition: transform 300ms ease;
 }
 
-ul:hover::before
-{
-    transform-origin: top bottom;
-    transform: scaleY(1);
-    z-index: -1;
-}
 .container
 {
     width: 100%;
