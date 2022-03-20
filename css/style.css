@@ -199,24 +199,47 @@ img:hover
 .cualidades
 {
     display: flex;
-    gap: 2rem;
     margin: 3rem;
     width: 100%;
     height: 15rem;
     background-color:#e0e5ec; 
     text-align: center;
+    flex-direction: row;
+    
+    
 }
 .cualidad
 {
-    margin: 1rem;
+    
     padding: 1rem;
-    width: 30%;
+    height: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-   
-}
-.border
-{
+    margin-top: .5rem;
     border-right: 1px solid black;
 }
+@media  screen and (max-width:1007px) {
+
+    .cualidades
+    {
+        flex-direction: column;
+        height: max-content;
+        width: 100%;
+    }
+  
+    .cualidad
+    {
+        width: 90%;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-right: none;
+        margin-left: 1.5rem;
+        border-bottom: 1px solid black;
+
+    }
+}
+
