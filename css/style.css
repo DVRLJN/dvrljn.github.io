@@ -175,7 +175,12 @@ img:hover
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 1rem;   
+}
+.sobre_mi
+{
+    border-bottom: 1px solid #000;
+    height: 5rem;
 }
 .parrafo
 {
