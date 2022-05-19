@@ -13,42 +13,44 @@ let barras = document.getElementById('barras');
 let player = document.getElementById('player');
 let lista = document.getElementById('lista');
 let count = 0;
+let audio = document.getElementById('audio');
 let playList = [
     {
     name : 'Young Girls',
-    path : '/audio/Bruno_Mars_Young_Girls.mp3'
+    // path : '../audio/Bruno_Mars_Young_Girls.mp3'
+    path : '../audio/Bruno_Mars_Locked_Out_Of_Heaven.mp3'
     },
     {
     name : 'Locked Out Heaven',
-    path : '/audio/Bruno_Mars_Locked_Out_Of_Heaven.mp3'
+    path : '../audio/Bruno_Mars_Locked_Out_Of_Heaven.mp3'
     },
     {
     name : 'Gorilla',
-    path : '/audio/Gorilla.mp3'
+    path : '../audio/Gorilla.mp3'
     },
     {
     name : 'Treasure',
-    path : '/audio/Treasure.mp3'
+    path : '../audio/Treasure.mp3'
     },
     {
     name : 'When I Was Your Man',
-    path : '/audio/When_I_Was_Your_Man.mp3'
+    path : '../audio/When_I_Was_Your_Man.mp3'
     },
     {
     name : 'Natalie',
-    path : '/audio/Natalie.mp3'
+    path : '../audio/Natalie.mp3'
     },
     {
     name : 'Show Me',
-    path : '/audio/Show_Me.mp3'
+    path : '../audio/Show_Me.mp3'
     },
     {
     name : 'Money Make Her Smile',
-    path : '/audio/Money_Make_Her_Smile.mp3'
+    path : '../audio/Money_Make_Her_Smile.mp3'
     },
     {
     name : 'If I Knew',
-    path : '/audio/If_I_Knew.mp3'
+    path : '../audio/If_I_Knew.mp3'
     }
  ];
 
@@ -75,7 +77,7 @@ next.addEventListener('click', function(e){
     count++;
     audio.pause();
     currentTime=0; 
-    audio.src=playList[count].path;
+    audio.setAttribute('src', playList[count].path);
     titleSong.innerHTML=playList[count].name;
     audio.play()  
 });
@@ -89,7 +91,8 @@ back.addEventListener('click', function(e){
         count--;
         audio.pause();
         currentTime=0; 
-        audio.src=playList[count].path;
+        // audio.src=playList[count].path;
+        audio.setAttribute('src', playList[count].path);
         titleSong.innerHTML=playList[count].name;
         audio.play()
     }  
